@@ -1,5 +1,5 @@
 -- Step 1 : self join,  Finding concurrent sessions so no two sessions_ids can be same
--- Step 2 : Sessons are concurrent if:
+-- Step 2 : Sessions are concurrent if:
 -- 		a. s1 starts first, s2 start >= s1 start
 --		b. s2 starts first, s2 start <= s1 end
 --	i.e s2 start between s1 start and s1 end
