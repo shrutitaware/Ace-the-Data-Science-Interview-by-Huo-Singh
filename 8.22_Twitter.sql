@@ -19,5 +19,5 @@ WITH top_topics AS
   
   SELECT
   		u.user_id
-  FROM user_topics INNER JOIN top_topics ON              -- users who follow top 100 topics
+  FROM user_topics u INNER JOIN top_topics t ON              -- users who follow top 100 topics
   u.topic_id=t.topic_id
