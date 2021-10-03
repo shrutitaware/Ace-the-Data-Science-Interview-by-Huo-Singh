@@ -9,7 +9,7 @@ WITH weekly_spend AS
   	product_id,
   	SUM(spend) AS total_spend
   FROM user_transactions
-  GRUP BY week, product_id
+  GROUP BY week, product_id
   ),
   
   total_weekly_spend AS
